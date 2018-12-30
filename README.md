@@ -1,9 +1,9 @@
 # msal-login-webcomponent
-HTML5 Web Component for Implicit flow authentication.  Includes a component for displaying user details.
+HTML5 WebComponent for Implicit flow authentication.  Additionally includes a component for displaying user and token information.
 
-1. Start by Registering an app with Azure.
-2. For this new app tet your replyTo url to http://localhost:4200
-3. Configure the component for authentication by updating the button attributes in index.html:
+1. Start by Registering an App (app registrations) with Azure Active Directory.
+2. For this new App, set the reply URL's to http://localhost:4200
+3. Configure the webcomponent for authentication by updating the button attributes (clientId and resource) in index.html:
 
 ```
 <button
@@ -14,7 +14,7 @@ HTML5 Web Component for Implicit flow authentication.  Includes a component for 
   redirectUri="<<PUT YOUR REDIRECT URL HERE>>"
   loggingEnabled=true>Login</button>
 ```
-NOTE: The auth-button webcomponent also support domainHint and loginHint as attributes.  Add if needed.
+NOTE: The auth-button webcomponent also support **domainHint** and **loginHint** as attributes.  Add in these attributes if needed.
 
 
 To test locally on Linux with an HTTP server:
