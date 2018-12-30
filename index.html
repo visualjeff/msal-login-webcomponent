@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>msal-login-webcomponent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.2.3/js/msal.min.js" crossorigin="anonymous"></script>
+    <script src="../lib/auth-button.js" crossorigin="anonymous"></script>
+    <script src="../lib/user-info.js" crossorigin="anonymous"></script>
+    <link href="//cdn.muicss.com/mui-0.9.41/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.41/js/mui.min.js"></script>
+  </head>
+  <body>
+    <div class="mui-container">
+    <div class="mui--text-display1">MSAL-LOGIN-WEBCOMPONENT</div>
+    <br>
+    <button class="mui-btn mui-btn--raised"
+	    id="auth-button" 
+	    is="auth-button"
+            clientId="<<PUT YOUR CLIENTID HERE>>" 
+	    resource="https://login.microsoftonline.com/<<TENANT>>.onmicrosoft.com"  
+	    redirectUri="http://localhost:4200"
+	    loggingEnabled=true>Login</button>
+      <br>
+      <br>
+        <user-info></user-info>
+    </div>
+  </body>
+</html>
+
