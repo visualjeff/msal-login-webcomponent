@@ -16,6 +16,7 @@ HTML5 WebComponent for Implicit flow authentication.  Additionally includes a co
 ```
 NOTE: The auth-button webcomponent also support **domainHint** and **loginHint** as attributes.  Add in these attributes if needed.
 
+B2C_NOTE: See [https://docs.microsoft.com/en-us/azure/active-directory-b2c/b2clogin](https://docs.microsoft.com/en-us/azure/active-directory-b2c/b2clogin) for help with the resource attribute.  Don't use login.microsoftonline.com for b2c.
 
 To test locally on Linux with an HTTP server:
 
