@@ -19,17 +19,15 @@
     <button class="mui-btn mui-btn--raised"
 	    id="auth-button" 
 	    is="auth-button"
-	    clientId="<<PUT YOUR CLIENTID HERE>>"
-            resource="https://login.microsoftonline.com/<<TENANT>>.onmicrosoft.com"
-            redirectUri="<<PUT YOUR REPLY URL HERE>>"
+            clientId="<< PUT YOUR APP_ID HERE >>"
+	    resource="https://login.microsoftonline.com/<< TENANT >>.onmicrosoft.com"
+            redirectUri="http://localhost:4200"
 	    loggingEnabled=true>Login</button>
       <br>
       <br>
         <user-info></user-info>
 
-
         <extended-user-info title="MS Graph User Info:"></extended-user-info>
-
     </div>
   </body>
 </html>
